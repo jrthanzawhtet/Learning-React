@@ -1,11 +1,14 @@
-import './App.css'
-import Child from './Child'
+// App.js
+import './App.css';
+import Child from './Child';
+import React from 'react';
+import ChildProps from './ChildProps';
+import Functional from './Functional';
 
 function App() {
-
-  return (
-    <Child/>
-  )
+    return (
+        <Functional/>
+    )
 }
 
-export default App
+export default App;
