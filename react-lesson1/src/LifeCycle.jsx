@@ -7,7 +7,8 @@ class LifeCycle extends Component {
         console.log('Constructor Start')
 
         this.state = {
-            count: 0
+            count: 0,
+            data: []
         }
     }
 
@@ -15,15 +16,20 @@ class LifeCycle extends Component {
         const data = await fetch("https://jsonplaceholder.typicode.com/users")
         const res = await data.json()
         console.log(res)
+        this.setState({
+            data: res
+        })
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        if(prevState.count !== this.state.count){
+            this.getData();
+        }
+        console.log("component is update")
     }
 
     componentDidMount() {
-        this.getData();
         console.log("component lifecycle start")
-    }
-
-    componentDidUpdate(){
-        console.log("component is update")
     }
 
     increaseHandler = () => {  
@@ -33,11 +39,13 @@ class LifeCycle extends Component {
     }
 
     render() {
-        console.log('render start')
         return (
             <>
                 <h1>{this.state.count}</h1>
                 <button onClick={this.increaseHandler}>Increase</button>
+                {this.state.data.map((item,index) => (
+                    <p key={index}>{item.name}</p>
+                ))}
             </>
         )
     }
