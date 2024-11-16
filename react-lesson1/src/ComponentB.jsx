@@ -9,6 +9,10 @@ class ComponentB extends Component{
     window.addEventListener("resize", this.resizeHandler)
   }
 
+  componentWillUnmount(){
+    window.removeEventListener("resize", this.resizeHandler)
+  }
+
   render(){
     return(
       <div>ComponentB</div>

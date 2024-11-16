@@ -8,11 +8,13 @@ import Input from './Input';
 import ListRendering from './ListRendering';
 import ConditionalRendering from './ConditionalRendering';
 import LifeCycle from './LifeCycle';
+import ComponentA from './ComponentA';
+import UseEffectHook from './UseEffectHook';
 
 function App() {
     return (
         <>
-        <LifeCycle></LifeCycle>
+        <UseEffectHook/>
         </>
     )
 }
