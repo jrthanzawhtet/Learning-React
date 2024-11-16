@@ -10,11 +10,13 @@ import ConditionalRendering from './ConditionalRendering';
 import LifeCycle from './LifeCycle';
 import ComponentA from './ComponentA';
 import UseEffectHook from './UseEffectHook';
+import GrandChild from './component/child/grand_child/GrandChild';
+import Component from './component/Component';
 
 function App() {
     return (
         <>
-        <UseEffectHook/>
+        <Component/>
         </>
     )
 }
