@@ -11,12 +11,14 @@ import LifeCycle from './LifeCycle';
 import ComponentA from './ComponentA';
 import UseEffectHook from './UseEffectHook';
 import GrandChild from './component/child/grand_child/GrandChild';
-import Component from './component/Component';
+import {MainComponent } from './component/MainComponent';
+import { AgetContext, NameContext } from './NameContext';
+import ReducerHook from './ReducerHook';
 
 function App() {
     return (
         <>
-        <Component/>
+        <ReducerHook/>
         </>
     )
 }
