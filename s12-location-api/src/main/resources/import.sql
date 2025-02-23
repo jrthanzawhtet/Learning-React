@@ -1,0 +1,14 @@
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (1, 'Ayeyarwady', 'ဧရာဝတီ', 'Pathein');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (2, 'Bago', 'ပဲခူး', 'Bago');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (3, 'Chin', 'ချင်း', 'Hakha');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (4, 'Kachin', 'ကချင်', 'Myitkyina');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (5, 'Kayah', 'ကယား', 'Loikaw');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (6, 'Kayin', 'ကရင်', 'Hpa-An');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (7, 'Magway', 'မကွေး', 'Magway');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (8, 'Mandalay', 'မန္တလေး', 'Mandalay');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (9, 'Mon', 'မွန်', 'Mawlamyine');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (10, 'Rakhine', 'ရခိုင်', 'Sittwe');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (11, 'Sagaing', 'စစ်ကိုင်း', 'Sagaing');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (12, 'Shan', 'ရှမ်း', 'Taunggyi');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (13, 'Tanintharyi', 'တနင်္သာရီ', 'Dawei');
+INSERT INTO Region (id, name, burmeseName, capital) VALUES (14, 'Yangon', 'ရန်ကုန်', 'Yangon');
