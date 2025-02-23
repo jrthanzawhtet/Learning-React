@@ -14,11 +14,12 @@ import GrandChild from './component/child/grand_child/GrandChild';
 import {MainComponent } from './component/MainComponent';
 import { AgetContext, NameContext } from './NameContext';
 import ReducerHook from './ReducerHook';
+import Styling from './Styling';
 
 function App() {
     return (
         <>
-        <ReducerHook/>
+        <Styling/>
         </>
     )
 }
