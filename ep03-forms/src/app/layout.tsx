@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import { Menu } from "@mui/icons-material";
+import { Drawer, Typography } from "@mui/joy";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,25 +26,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <nav className="py-4 px-8 bg-indigo-300 text-white">
-          <div className="flex justify-between">
-            <span>Using States</span>
-
-            <ul>
-              <li className="px-3">
-                <Link href={'/simple'}>Use State</Link>
-                <Link href={'/input'}>Simple Input</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <main className="px-6 py-4">
+      <body>
+        <section className="flex items-center px-8 py-4">
+        <Menu className="me-2"/>
+        <Typography level="h4">JDC PORTAL</Typography>
+        </section>
         {children}
-        </main>
       </body>
     </html>
   );
+}
+
+function MainLayout({children} : {children:React.ReactNode}){
+  return(
+    <body>
+      <section className="flex items-center px-8 py-4">
+        <Menu className="me-2"/>
+        <Typography level="h4">JDC PORTAL</Typography>
+        </section>
+        {children}
+    </body>
+  )
 }
